@@ -4,10 +4,11 @@ import {
   Routes,
 } from 'react-router-dom';
 import './App.css';
+import { Home, Navigation } from './components';
 
 const Layout = () => (
   <main>
-    {/* <Navigation /> */}
+    <Navigation />
     <Outlet />
   </main>
 );
@@ -16,7 +17,7 @@ function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
-        {/* <Route path="/" element={<Rockets />} /> */}
+        <Route path="/" element={<Home />} />
       </Route>
     </Routes>
   );
