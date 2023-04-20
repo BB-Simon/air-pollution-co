@@ -12,7 +12,7 @@ const initialState = {
 
 export const fetchLocationsData = createAsyncThunk('locations/fetchLocationsData', async () => {
   try {
-    const cities = ['Cairo', 'Dhaka', 'San Francisco', 'Tokyo', 'London', 'Makka'];
+    const cities = ['Kyoto', 'Dhaka', 'Shanghai', 'Tokyo', 'Kathmandu', 'Makka'];
     const req = cities.map(async (city) => {
       const res = await fetch(`${baseUrl}?q=${city}&limit=${1}&appid=${apiKey}`);
       return res.json();
@@ -31,7 +31,7 @@ export const locationSlice = createSlice({
     builder.addCase(fetchLocationsData.pending, (state) => ({ ...state, locationsLoading: true }));
     builder.addCase(fetchLocationsData.fulfilled, (state, action) => {
       const cities = action.payload.map((p) => ({
-        country: p[0].country,
+        country: p[0]?.country,
         lat: p[0].lat,
         lon: p[0].lon,
         name: p[0].name,

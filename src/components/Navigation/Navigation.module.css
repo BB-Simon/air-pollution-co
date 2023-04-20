@@ -1,6 +1,7 @@
 .navbar {
   width: 100%;
   background-color: var(--darkPink);
+  color: var(--white);
   padding: 10px;
 
   /* Layout */
@@ -9,17 +10,8 @@
   justify-content: space-between;
 }
 
-.logo {
-  /* width: 15rem; */
-  height: 2.313rem;
-  margin: 0.375rem 2.938rem 0.125rem 0;
-  font-size: 1.875rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #0290ff;
+.logoWrapper {
+  color: var(--white);
 }
 
 .navItemsWrapper {
@@ -34,6 +26,7 @@
 .navItem {
   list-style: none;
 }
+
 .navItem:last-child {
   margin-left: 28px;
 }

@@ -5,8 +5,33 @@
 }
 
 :root {
-  --blue: #4369B2;
-  --pink: #EC4C8A;
-  --darkPink: #D04379;
-  --white: #ffffff;
+  --blue: #4369b2;
+  --pink: #ec4c8a;
+  --darkPink: #d04379;
+  --lightDarkPink: #dd4882;
+  --white: #fff;
+}
+
+body {
+  /* background-color: var(--darkPink); */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
 }

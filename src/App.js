@@ -4,7 +4,7 @@ import {
   Routes,
 } from 'react-router-dom';
 import './App.css';
-import { Home, Navigation } from './components';
+import { Home, Metrics, Navigation } from './components';
 
 const Layout = () => (
   <main>
@@ -18,6 +18,7 @@ function App() {
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
+        <Route path="/metrics" element={<Metrics />} />
       </Route>
     </Routes>
   );

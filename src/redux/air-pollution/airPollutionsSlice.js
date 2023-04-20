@@ -15,7 +15,11 @@ export const fetchAirPollutionData = createAsyncThunk('air-pollutions/fetchAirPo
     const { lat, lon } = action;
     const res = await fetch(`${baseUrl}?lat=${lat}&lon=${lon}&appid=${apiKey}`);
     const data = await res.json();
-    return data.list[0].components;
+    return {
+      ...data.list[0].components,
+      dt: data.list[0].dt,
+      aqi: data.list[0].main.aqi,
+    };
   } catch (error) {
     return error;
   }

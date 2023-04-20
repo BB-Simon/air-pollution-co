@@ -1,11 +1,13 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faGear, faMicrophone } from '@fortawesome/free-solid-svg-icons';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import css from './Navigation.module.css';
 
 const Navigation = () => {
-  const navLink = ({ isActive }) => (isActive ? `${css.navLink} ${css.active}` : `${css.navLink}`);
+  const { search } = useLocation();
+  const searchParams = new URLSearchParams(search);
+  const city = searchParams.get('city');
 
   return (
     <nav className={css.navbar}>
@@ -14,9 +16,9 @@ const Navigation = () => {
         {' '}
         2023
       </Link>
-      <Link to="/" className={css.logoWrapper}>
-        City/London
-      </Link>
+      <p to="/">
+        {city ? `City/${city}` : 'Cities/Asia'}
+      </p>
       <ul className={css.navItemsWrapper}>
         <li className={css.navItem}>
           <FontAwesomeIcon icon={faMicrophone} />
