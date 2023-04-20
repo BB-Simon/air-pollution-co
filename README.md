@@ -68,8 +68,8 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- - [Live Demo Link](https://air-pollution-nc9p.onrender.com/) -->
-<!-- - [Loom Demo Link](https://www.loom.com/share/6459fc24c3ed4f0bbe094b4870abd1de/) -->
+- [Live Demo Link](https://air-pollution-nc9p.onrender.com/)
+- [Loom Demo Link](https://www.loom.com/share/6459fc24c3ed4f0bbe094b4870abd1de/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
