@@ -20,7 +20,9 @@ const Metrics = () => {
   } = useSelector((state) => state.airPollutions);
 
   useEffect(() => {
-    dispatch(fetchAirPollutionData({ lat, lon }));
+    (async () => {
+      dispatch(fetchAirPollutionData());
+    })();
   }, [dispatch, lat, lon]);
 
   if (loading) {

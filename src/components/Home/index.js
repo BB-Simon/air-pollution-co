@@ -8,6 +8,7 @@ import css from './Home.module.css';
 const Home = () => {
   const { locations, locationsLoading } = useSelector((state) => state.locations);
   const dispatch = useDispatch();
+  console.log('locations', locations);
 
   useEffect(() => {
     if (locations.length === 0) {
