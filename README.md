@@ -152,8 +152,8 @@ If you like this project, you are welcomed to star and fork it. You can also sha
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
--[I would like to thank Microverse] for their idea of  the idea of Air Pollution Metrics project.
--[Nelson Sakwa on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) for his beautiful design
+I would like to thank Microverse for their idea of  the idea of Air Pollution Metrics project.
+and -[Nelson Sakwa on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) for his beautiful design
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
