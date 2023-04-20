@@ -1,8 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const apiKey = 'cd559a00a031c2d7baba09afe0b27bbb';
-
-const baseUrl = 'http://api.openweathermap.org/data/2.5/air_pollution';
+const baseUrl = 'https://api.openweathermap.org/data/2.5/air_pollution';
 
 const initialState = {
   airPollutions: {},
@@ -29,11 +28,11 @@ export const airPollutionSlice = createSlice({
       ...state, airpollutionsLoading: true,
     }));
     builder.addCase(fetchAirPollutionData.fulfilled, (state, action) => {
-      const data = action.payload?.list[0];
+      const data = action.payload.list;
       const metrics = {
-        ...data.components,
-        dt: data?.dt,
-        aqi: data.main?.aqi,
+        ...data[0].components,
+        dt: data[0]?.dt,
+        aqi: data[0].main?.aqi,
       };
 
       return {

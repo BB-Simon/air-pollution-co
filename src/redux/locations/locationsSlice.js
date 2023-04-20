@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const apiKey = 'cd559a00a031c2d7baba09afe0b27bbb';
 
-const baseUrl = 'http://api.openweathermap.org/geo/1.0/direct';
+const baseUrl = 'https://api.openweathermap.org/geo/1.0/direct';
 
 const initialState = {
   locations: [],

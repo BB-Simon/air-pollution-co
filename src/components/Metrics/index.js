@@ -21,7 +21,7 @@ const Metrics = () => {
 
   useEffect(() => {
     (async () => {
-      dispatch(fetchAirPollutionData());
+      dispatch(fetchAirPollutionData({ lat, lon }));
     })();
   }, [dispatch, lat, lon]);
 
