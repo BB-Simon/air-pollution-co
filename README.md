@@ -33,7 +33,7 @@
 
 # 📖 [Air Pollution Metrics] <a name="about-project"></a>
 
-**Air Pollution Metrics** is a mobile first web application which gives information about air pollution composition in the six beautiful Cities of Asia indicating the Air Quality in each of them.
+**Air Pollution Metrics** is a mobile-first web application that gives information about air pollution composition in the six beautiful Cities of Asia indicating the Air Quality in each of them.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -56,10 +56,10 @@
 ### Key Features <a name="key-features"></a>
 - **Create react app by create-react-app**
 - **Add Home component**
-- **Fecth location cords by open wather API**
+- **Fetch location cords by open weather API**
 - **Add Metrics component**
-- **Fecth air composition data by open wather API**
-- **Add test to Home component by open mock store**
+- **Fetch air composition data by open weather API**
+- **Add test to the Home component by opening mock store**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
