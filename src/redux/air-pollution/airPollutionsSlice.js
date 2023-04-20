@@ -14,12 +14,7 @@ export const fetchAirPollutionData = createAsyncThunk('air-pollutions/fetchAirPo
   try {
     const { lat, lon } = action;
     const res = await fetch(`${baseUrl}?lat=${lat}&lon=${lon}&appid=${apiKey}`);
-    const data = await res.json();
-    return {
-      ...data.list[0].components,
-      dt: data.list[0].dt,
-      aqi: data.list[0].main.aqi,
-    };
+    return res.json();
   } catch (error) {
     return error;
   }
@@ -29,15 +24,24 @@ export const airPollutionSlice = createSlice({
   name: 'airPollution',
   initialState,
   extraReducers: (builder) => {
-    // Fetch cities location
+    // Fetch metrics
     builder.addCase(fetchAirPollutionData.pending, (state) => ({
       ...state, airpollutionsLoading: true,
     }));
-    builder.addCase(fetchAirPollutionData.fulfilled, (state, action) => ({
-      ...state,
-      airpollutionsLoading: false,
-      airPollutions: { ...action.payload },
-    }));
+    builder.addCase(fetchAirPollutionData.fulfilled, (state, action) => {
+      const data = action.payload?.list[0];
+      const metrics = {
+        ...data.components,
+        dt: data?.dt,
+        aqi: data.main?.aqi,
+      };
+
+      return {
+        ...state,
+        airpollutionsLoading: false,
+        airPollutions: { ...metrics },
+      };
+    });
     builder.addCase(fetchAirPollutionData.rejected, (state, action) => ({
       ...state,
       airpollutionsLoading: false,
