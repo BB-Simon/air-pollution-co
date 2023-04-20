@@ -1,0 +1,69 @@
+.home {
+  width: 100%;
+}
+
+.loading {
+  padding: 10px;
+}
+
+.bannerContainer {
+  width: 100%;
+  height: 60vh;
+  background-color: var(--pink);
+  background-image: url('../../assets/land.png');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  object-fit: contain;
+  color: var(--white);
+
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroTitle {
+  font-size: 34px;
+  line-height: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.heroDescription {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.locationContainer {
+  width: 100%;
+  background: var(--lightDarkPink);
+  padding: 10px;
+}
+
+.locationTitle {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--white);
+  padding: 0 0 10px;
+}
+
+.locationCardContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .bannerContainer {
+    height: 35vh;
+  }
+
+  .locationCardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
