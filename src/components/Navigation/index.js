@@ -16,7 +16,7 @@ const Navigation = () => {
         {' '}
         2023
       </Link>
-      <p to="/">
+      <p>
         {city ? `City/${city}` : 'Cities/Asia'}
       </p>
       <ul className={css.navItemsWrapper}>
