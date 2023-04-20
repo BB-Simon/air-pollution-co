@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>Space Travelers Hub</b></h3>
+  <h3><b>Air Pollution Metrics</b></h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -31,9 +31,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Space Travelers Hub] <a name="about-project"></a>
+# 📖 [Air Pollution Metrics] <a name="about-project"></a>
 
-**Space Travelers Hub**
+**Air Pollution Metrics** is a mobile first web application which gives information about air pollution composition in the six beautiful Cities of Asia indicating the Air Quality in each of them.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -55,11 +55,20 @@
 
 ### Key Features <a name="key-features"></a>
 - **Create react app by create-react-app**
-- **Add button component**
-- **Add Mission  component**
-- **Add my-profile component**
-- **Add Rockets components**
+- **Add Home component**
+- **Fecth location cords by open wather API**
+- **Add Metrics component**
+- **Fecth air composition data by open wather API**
+- **Add test to Home component by open mock store**
 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -81,7 +90,7 @@ In order to run this project you need:
 
 > Clone this repository to your desired folder:
 
-git clone https://github.com/BB-Simon/space-travelers-hub
+git clone https://github.com/BB-Simon/air-pollution-co
 
 > In the project directory, you can run:
 
@@ -107,7 +116,7 @@ to build:
 👤  **Nicholas Amissah**
 
 - GitHub: [Github](https://github.com/ato624) 
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/nicholas-amissah/) 
+- LinkedIn: [LinkedIn](https://github.com/BB-Simon/air-pollution-co) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,6 +125,7 @@ to build:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - **Refactor code with classes**
+- **Add animation and more interactivity to the app**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,7 +135,7 @@ to build:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/BB-Simon/todo-list-with-es6/issues).
+Feel free to check the [issues page](https://github.com/BB-Simon/air-pollution-co/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -141,7 +151,7 @@ If you like this project, you are welcomed to star and fork it. You can also sha
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for their idea of  the idea of Space Travelers Hub project.
+I would like to thank Microverse for their idea of  the idea of Air Pollution Metrics project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
